@@ -19,7 +19,8 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3    
+    - uses: actions/checkout@v3 
+ 
     - name: Install backend npm packages
       uses: bahmutov/npm-install@v1
       with:
@@ -34,7 +35,7 @@ jobs:
 #      env: 
 #        ATLAS_URI: ${{ secrets.ATLAS_URI }}
 #    - run: (echo "ATLAS_URI=$ATLAS_URI" > .env)
-    - run: (cd backend && npm start &)
+      run: (cd backend && npm start &)
 
     - name: Start React app in the background
       run: (cd frontend && npm start &)
