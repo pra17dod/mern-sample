@@ -9,4 +9,4 @@ app.get('/', (req, res)=> {
     res.json({msg: "Hello I am Backend"})
 })
 
-app.listen(port);
+app.listen(port, [host='0.0.0.0']);
