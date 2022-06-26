@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res)=> {
-    res.json({msg: "Hello I am Backend! I am awesome!"})
+    res.json({msg: "Hello I am Backend! I am very awesome!"})
 })
 
 app.listen(port, [host='0.0.0.0']);
